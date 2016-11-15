@@ -1,0 +1,105 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<style>
+	body {margin: 5em;}
+	legend {margin-left: 5em;}
+	button {width: 20em;}
+</style>
+
+<script>
+	$(document).ready(function () {
+     $("body").find("legend").find("t").text(Date())
+  });
+</script>
+
+</head>
+<body>
+	<form class="form-horizontal">
+	<fieldset>
+
+	<legend> <b style="color:navy;"> UofTAlerts </b> - Notification Broadcast Form - <t id="datetime" style="color:grey"> abc </t> </legend>
+
+	<div class="form-group">
+  	<label class="col-md-4 control-label" for="title">Message Title</label>  
+	  <div class="col-md-4">
+	  	<input id="textinput" name="textinput" type="text" placeholder="Emergency Notification" class="form-control input-md">
+	  </div>
+	</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="message">Message Body</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="message" name="message"></textarea>
+  </div>
+</div>
+
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="type">Alert Type</label>
+	  <div class="col-md-4">
+	    <select id="selectb" name="selectb" class="form-control">
+	      <option value="1">Armed Suspect</option>
+	      <option value="2">Fire Incident</option>
+	      <option value="3">Gas Leak</option>
+	      <option value="4">Natural Disaster</option>
+	      <option value="5">Medical Distress</option>
+	    </select>
+	  </div>
+	</div>
+
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="severity">Severity</label>
+	  <div class="col-md-4">
+	    <select id="severity" name="severity" class="form-control">
+	      <option value="1">Critical</option>
+	      <option value="2">High</option>
+	      <option value="3">Medium</option>
+	      <option value="4">Low</option>
+	    </select>
+	  </div>
+	</div>
+
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="location"> Location </label>
+		<map class="col-md-4">
+		  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2886.292050390414!2d-79.39785044862926!3d43.66289555971868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1479150931868" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</map>
+	</div>
+
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="address">Address</label>  
+	  <div class="col-md-4">
+	  <input id="address" name="address" type="text" placeholder="St George St Toronto, ON M5S 2E4" class="form-control input-md">
+	  <span class="help-block">street adress</span>  
+	  </div>
+	</div>
+
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="building">Affected Building(s)</label>
+	  <div class="col-md-4">
+	    <select id="building" name="building" class="form-control" multiple="multiple">
+	      <option value="1">Bahen Centre for Information</option>
+	      <option value="2">Sandford Fleming Building</option>
+	      <option value="">Gerstein Science Information Centre</option>
+	    </select>
+	    <span class="help-block">select all</span> 
+	  </div>
+	</div>
+	</fieldset>
+	</form>
+
+	<div style="align="center"">
+	  <label class="col-md-4 control-label" for="buttons"></label>
+	  <div>
+	    <a href="./confirmation_screen.html">
+	    	<button id="send" name="send" class="btn btn-success">Send Alert</button>
+	    </a>
+	    <a href="./main_form.html">
+	    	<button id="cancel" name="cancel" class="btn btn-danger">Reset</button>
+	    <a>
+	  </div>
+	</div>
+</body>
+<html>

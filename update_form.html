@@ -20,19 +20,19 @@
 	<form class="form-horizontal">
 	<fieldset>
 
-	<legend> <b style="color:navy;"> UofTAlerts </b> - Notification Broadcast Form - <t id="datetime" style="color:grey; font-size:85%"> abc </t> </legend>
+	<legend> <b style="color:navy;"> UofTAlerts </b> - Update - Weather Warning - <t id="datetime" style="color:grey; font-size:85%"> abc </t> </legend>
 
 	<div class="form-group">
   	<label class="col-md-4 control-label">Message Title</label>  
 	  <div class="col-md-4">
-	  	<input type="text" placeholder="Emergency Notification" class="form-control input-md">
+	  	<input type="text" value="Weather Warning - Snow Storm" class="form-control input-md">
 	  </div>
 	</div>
 
 <div class="form-group">
   <label class="col-md-4 control-label" for="message">Message Body</label>
   <div class="col-md-4">                     
-    <textarea class="form-control"></textarea>
+    <textarea class="form-control">The Medical Officer of Health will issue Extreme Cold Weather Alerts when Environment Canada forecasts a temperature of -15 °C or colder or a wind chill of -20 or colder in the City of Toronto. ... During Extreme Cold Weather Conditions.</textarea>
   </div>
 </div>
 
@@ -40,10 +40,10 @@
 	  <label class="col-md-4 control-label" for="type">Alert Type</label>
 	  <div class="col-md-4">
 	    <select class="form-control">
+	      <option>Natural Disaster</option>
 	      <option>Armed Suspect</option>
 	      <option>Fire Incident</option>
 	      <option>Gas Leak</option>
-	      <option>Natural Disaster</option>
 	      <option>Medical Distress</option>
 	      <option>Other</option>
 	    </select>
@@ -72,7 +72,7 @@
 	<div class="form-group">
 	  <label class="col-md-4 control-label">Address</label>  
 	  <div class="col-md-4">
-	  <input type="text" placeholder="St George St Toronto, ON M5S 2E4" class="form-control input-md">
+	  <input type="text" value="St George St Toronto, ON M5S 2E4" class="form-control input-md">
 	  <span class="help-block">street adress</span>  
 	  </div>
 	</div>
@@ -95,7 +95,7 @@
 	  <label class="col-md-4 control-label" for="buttons"></label>
 	  <div>
 	    <a href="./confirmation_screen.html">
-	    	<button class="btn btn-success">Send Alert</button>
+	    	<button class="btn btn-success">Update Alert</button>
 	    </a>
 	    <a href="./dashboard.html">
 	    	<button class="btn btn-danger">Cancel</button>
